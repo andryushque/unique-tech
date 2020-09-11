@@ -1,0 +1,47 @@
+.logo
+  padding-right: 1rem
+  font: normal 700 2.6rem "Roboto"
+  text-transform: uppercase
+  &__text
+    display: inline-block
+    &:first-child
+      margin-right: 0.5rem
+      padding: 0.5rem 1rem
+      color: $color-light2
+      border: 3px solid $color-accent2
+    &:last-child
+      color: $color-dark1
+
+.header
+  padding: 8rem 0
+  background-color: $color-accent
+  color: $color-dark1
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .nav
+    &__list
+      display: flex
+      align-items: flex-start
+      margin: 0
+      padding: 0
+      list-style-type: none
+    &__item
+      margin-left: 3.5rem
+    &__link
+      font: normal 700 1.4rem "Roboto"
+      text-transform: uppercase
+      color: $color-dark1
+      &:hover
+        color: $color-dark6
+        transition: color 0.3s ease
+      &:last-child
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__text
+      display: inline-block
+      &:first-child
+        margin-bottom: 0.5rem
