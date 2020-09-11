@@ -7,6 +7,8 @@
     justify-content: space-between
     flex-wrap: wrap
   &__content
+    display: flex
+    flex-direction: column
     width: 34%
   &__slider
     width: 66%
@@ -26,8 +28,9 @@
     display: inline-flex
     align-items: center
     justify-content: center
-    min-width: 15rem
-    height: 5rem
+    flex: 1 1 auto
+    width: 15rem
+    min-height: 5rem
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.25)
     background-color: $color-dark1
     font: normal 400 1.6rem "Roboto"
@@ -45,6 +48,7 @@
     justify-content: center
     padding-top: 5rem
   &__image
+    max-width: 60rem
     &--sm
       position: absolute
       right: 6rem
