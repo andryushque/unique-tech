@@ -1,0 +1,51 @@
+.features
+  padding: 14rem 0
+  background-color: $color-light2
+  color: $color-dark2
+
+  &__title
+    margin: 0 auto 18rem
+    @include section-title()
+    &-wrapper
+      position: relative
+      text-align: center
+  &__arrow
+    position: absolute
+    top: 2rem
+    left: 64%
+    z-index: 10
+
+  .cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      display: flex
+      width: 32%
+      margin-bottom: 2rem
+      padding: 2rem
+      cursor: text
+      &:nth-last-child(-n+3)
+        margin-bottom: 0
+      &:hover
+        background-color: $color-accent
+        transition: background-color 0.3s ease
+        .cards
+          &__title, &__text, &__icon
+            color: $color-dark4
+            transition: color 0.3s ease
+    &__icon
+      display: block
+      margin-right: 1.5rem
+      margin-top: 0.5rem
+      font-size: 3rem
+      color: $color-dark2
+    &__title
+      margin-bottom: 1rem
+      font: normal 400 1.8rem/2.5rem "Roboto"
+      color: $color-dark2
+      text-transform: capitalize
+    &__text
+      font: normal 400 1.4rem/2.5rem "Roboto"
+      color: $color-dark5
+
