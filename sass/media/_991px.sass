@@ -52,3 +52,29 @@
         right: 0
     &__arrow
       display: none
+
+  .information
+    padding: 10rem 0
+    &__title
+      margin-bottom: 10rem
+    .cards
+      &__item
+        margin-bottom: 10rem
+        flex-direction: column
+        &:nth-child(even)
+          .cards
+            &__content
+              order: 0
+            &__image
+              &-wrapper
+                justify-content: center
+      &__image
+        &-wrapper
+          width: 100%
+          justify-content: center
+          margin-bottom: 3rem
+      &__content
+        width: 100%
+        text-align: center
+    &__arrow
+      display: none
