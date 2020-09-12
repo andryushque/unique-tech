@@ -1,0 +1,56 @@
+.information
+  padding: 14rem 0
+  background-color: $color-light2
+  color: $color-dark2
+
+  &__title
+    display: inline-block
+    min-width: 33rem
+    margin: 0 auto 18rem
+    padding: 0 2.3rem
+    font: normal 700 2.6rem/5.5rem "SourceSansPro"
+    text-transform: uppercase
+    color: $color-light1
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.25);
+    background-color: $color-dark1
+    text-align: center
+    &-wrapper
+      position: relative
+      text-align: center
+  &__arrow
+    position: absolute
+    top: 2rem
+    left: 64%
+    z-index: 10
+
+  .cards
+    &__item
+      display: flex
+      justify-content: space-evenly
+      margin-bottom: 18rem
+      &:last-child
+        margin-bottom: 0
+      &:nth-child(even)
+        .cards
+          &__content
+            order: -1
+          &__image
+            &-wrapper
+              justify-content: flex-end
+    &__image
+      &-wrapper
+        display: flex
+        width: 40%
+    &__content
+      width: 40%
+      text-align: left
+    &__title
+      margin-bottom: 2rem
+      font: normal 700 1.8rem "Roboto"
+      text-transform: uppercase
+      color: $color-dark3
+    &__text
+      margin-bottom: 1.4rem
+      font: normal 300 1.4rem "Roboto"
+      line-height: 22.41px
+      color: $color-dark2
