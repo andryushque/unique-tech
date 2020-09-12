@@ -1,0 +1,55 @@
+.footer
+  background-color: $color-dark2
+  color: $color-light5
+  &-top
+    padding: 5rem 0 2rem
+  &-bottom
+    padding: 3rem 0
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    width: 22%
+  &__title
+    margin-bottom: 4rem
+    font: normal 500 1.8rem "Roboto"
+    text-transform: uppercase
+    color: $color-light4
+  &__list
+    margin: 0
+    padding: 0
+    list-style-type: none
+  &__listitem
+    margin-bottom: 1rem
+  &__link
+    font: normal 300 1.6rem "Roboto"
+    color: $color-light5
+    &:hover
+      text-decoration: underline
+
+  &-bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__social
+    margin-bottom: 2rem
+    .social
+      &__link
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        width: 4rem
+        height: 4rem
+        margin: 0 0.5rem
+        border-radius: 2px
+        background-color: $color-accent
+        color: $color-light1
+        font-size: 1.5rem
+        &:hover
+          color: rgba($color-dark6, 0.5)
+          transition: color 0.3s ease
+  &__copyright
+    font: normal 300 1.6rem "Roboto"
+    color: $color-light5
+
