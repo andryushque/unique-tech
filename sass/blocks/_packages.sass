@@ -1,0 +1,85 @@
+.packages
+  padding: 12rem 0
+  background-color: $color-light3
+  color: $color-dark3
+
+  &__title
+    margin: 0 auto 14rem
+    @include section-title()
+    &-wrapper
+      position: relative
+      text-align: center
+  &__arrow
+    position: absolute
+    top: 2rem
+    right: 64%
+    z-index: 10
+
+  .cards
+    display: flex
+    justify-content: center
+    &__item
+      width: 25%
+      text-align: center
+      &:last-child
+        .cards
+          &__table
+            border-right: none
+    &__title
+      text-align: center
+      &--grey
+        font: normal 500 2.3rem/3rem "Roboto"
+        color: $color-accent4
+      &--accent2
+        font: normal 500 2.7rem/3rem  "Roboto"
+        color: $color-accent3
+      &--accent
+        font: normal 500 2.3rem/3rem  "Roboto"
+        color: $color-accent
+
+    &__table
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding-top: 5rem
+      margin-bottom: 3.5rem
+      border-right: 2px solid $color-accent
+    &__text
+      display: block
+      width: 100%
+      height: 5rem
+      text-align: center
+      border-bottom: 2px solid $color-accent
+      &--grey
+        font: normal 500 1.6rem/5rem "Roboto"
+        color: #b3b3b3
+      &--accent2
+        font: normal 500 1.8rem/5rem "Roboto"
+        color: $color-dark2
+      &--accent
+        font: normal 500 1.6rem/5rem "Roboto"
+        color: #b3b3b3
+    &__price
+      &-wrapper
+        display: flex
+        align-items: flex-end
+        height: 10rem
+      &--grey
+        font: normal 500 3.5rem "Roboto"
+        color: #b3b3b3
+        .cards
+          &__subtext
+            font-size: 2.5rem
+      &--accent2
+        font: normal 500 6.8rem "Roboto"
+        color: $color-accent3
+        .cards
+          &__subtext
+            font-size: 2.5rem
+      &--accent
+        font: normal 500 3.5rem "Roboto"
+        color: $color-accent
+        .cards
+          &__subtext
+            font-size: 2.5rem
