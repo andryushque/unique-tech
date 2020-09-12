@@ -1,0 +1,39 @@
+.projects
+  padding: 14rem 0
+  background-color: $color-light2
+  color: $color-dark2
+
+  &__title
+    margin: 0 auto 14rem
+    @include section-title()
+    &-wrapper
+      position: relative
+      text-align: center
+  &__arrow
+    position: absolute
+    top: 2rem
+    left: 69%
+    z-index: 10
+
+  .cards
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding: 9rem 0
+    background-color: #f4f4f4
+    &__item
+      width: 21%
+      &:nth-child(-n+4)
+        margin-bottom: 4rem
+    &__image
+      max-width: 18rem
+      height: 100%
+      width: auto
+      object-fit: contain
+      &-wrapper
+        height: 14rem
+        margin-bottom: 3rem
+    &__title
+      font: normal 700 1.6rem "Roboto"
+      text-transform: uppercase
+      color: $color-dark6
